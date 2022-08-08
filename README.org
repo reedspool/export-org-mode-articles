@@ -1,0 +1,29 @@
+#+title: Export Org Mode Articles to HTML Emacs Script
+
+* Technology
+
+- Org Mode
+- Emacs
+- Elisp
+- Bash
+  - Currently this uses GNU =getopt= which [[https://stackoverflow.com/a/7948533][restricts its usage to Linux]], unless you want to install GNU =getopt= on your Mac.
+- ox-publish
+
+* System Setup
+:PROPERTIES:
+:CREATED:  [2022-07-25 Mon 18:23]
+:END:
+
+You will need Emacs (Only tested version: 28.1) installed on your system.
+
+* Usage
+
+Note: Only tested on Pop_OS! 22.04 with Emacs 28.1.
+
+#+begin_src sh
+# 1. Ensure the export script is executable
+chmod +x export.sh
+
+# 2. Run the export script
+./export.sh
+#+end_src
